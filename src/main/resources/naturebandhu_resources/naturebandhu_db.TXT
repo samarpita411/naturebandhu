@@ -1,0 +1,280 @@
+.... query to create Database
+------------------------------
+create database naturebandhu_db;
+
+
+....query to use database
+--------------------------
+use naturebandhu_db;
+
+
+..query to create table:
+ -------------------
+ 
+>> create table Product_Category (category_id integer not null, category_name varchar(255) not null,
+ primary key (category_id));
+ 
+>>create table Product_Details (product_id integer not null, product_brand varchar(255) not null, 
+product_color varchar(255) not null, product_cost bigint not null, product_name varchar(255) not 
+null, product_warranty integer, category_id integer not null, primary key (product_id));
+ 
+
+
+..query to insert data in the  table:
+ -------------------------------->Product_Category 
+
+
+insert into Product_Category (category_name, category_id) values ("PEN", 1);
+insert into Product_Category (category_name, category_id) values ("CAR", 2);
+insert into Product_Category (category_name, category_id) values ("AIRPLANE", 3);
+insert into Product_Category (category_name, category_id) values ("BAG", 4);
+insert into Product_Category (category_name, category_id) values ("WATCH", 5);
+insert into Product_Category (category_name, category_id) values ("CLOCK", 6);
+
+..query to insert data in the  table:
+ -------------------------------->Product_Details
+
+
+
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values (?, ?, ?, ?, ?, ?, ?);
+
+insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Auteur Auspicious, Blessings of Lord Ganesha", 1, "Bronze", 427,
+ "Auteur Auspicious, Blessings of Lord Ganesha, Made in Bronze, Om and Ganesha Carved Ball Pen", 0, 1);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "Multicolour", 100,
+ "Cello Geltech Fun Glitter Multicolour Gel Pen", 0, 2);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "blue", 90,
+ "Cello Jet Maxx Gold and Jet Maxx Gel Blue Pen Gift Set", 0, 3);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "black", 100,
+ "Cello Maxriter Black Ball Pen", 0, 4);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "Crme Ebony", 213,
+ "Cello Signature Crme Ebony Roller Pen Roller Ball Pen", 0, 5);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "Crme Ivory", 213,
+ "Cello Signature Crme Ivory Roller Pen Roller", 0, 6);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "black", 255,
+ "Cello Signature Treasure Ball Pen Ball", 0, 7);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 1, "black", 340,
+ "Cello Signature Treasure Roller Pen Roller Ball", 0, 8);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("daluci", 1, "gold", 299,
+ "daluci-ot2123-original-imaf64fpx5hbme9x", 0, 9);
+
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Flair", 1, "multicolor", 299,
+ "Flair Ezee Click Ball Pen  (Pack of 60)", 0, 10);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Parker", 1, "red", 147,
+ "Parker Beta Std CT Ball pen Red with S.knife Pen Gift Set", 0, 11);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Parker", 1, "grey", 440,
+ "Parker Frontier Stainless Steel CT with Dad Quote-5 Roller Ball Pen", 0, 12);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Parker", 1, "grey", 429,
+ "Parker Frontier Valentine Edition Stainless Steel CT Roller Ball", 0, 13);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Parker", 1, "black", 1480,
+ "Parker LATITUDE LAQ BLACK CT Roller Ball Pen", 0, 14);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Parker", 1, "black", 480,
+ "Parker Vector Standard Roller Ball pen +Ball pen Black body with free Parker Key Chain Pen Gift Set", 0, 15);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "blue", 99,
+ "Pilot Hi-Techpoint 05 Super Value(Pack of 3 )Blue Roller Ball Pen", 0, 16);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "black", 122,
+ "Pilot Hi-tecpoint V7 cartridge System ( 2 Black Pen+ 4 Black cartridge) Roller Ball Pen  (Pack of 6)", 0, 17);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "black", 990,
+ "Pilot Leopard Ball Pen", 0, 18);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "black", 1080,
+ "Pilot Lizard Roller Ball Pen", 0, 19);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "blue", 99,
+ "Pilot V5 Pen (Pack of 2 )Blue Roller Ball Pen", 0, 20);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Pilot", 1, "green", 864,
+ "Pilot V7 Grip Green (Pack of 12) Roller Ball Pen", 0, 21);
+  
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Amayra Toy", 2, "yellow", 679,
+ "Amayra Toy Yellow Super Car with doors open and Remote from Amayra store  (Yellow)", 0, 22);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Bluekart", 2, "Red", 375,
+ "Bluekart Online Remote Control Famous Car I8 Electric 3D Lightning  (Red)",0, 23);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Bonkerz", 2, "Multicolor", 431,
+ "Bonkerz Remote Control Famous Car Bmw I8 Electric Chargeable 3D Lightning  (Multicolor)", 0, 24);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("CENTY Hindustan", 2, "Multicolor", 143,
+ "CENTY Hindustan Ambassador Car  (Multicolor)", 0, 25);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Disney Pixar", 2, "Multicolor", 1315,
+ "Disney Pixar Cars Mater Challenge Set  (Multicolor)", 0, 26);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Furious 4", 2, "Red", 660,
+ "Furious 4 Ferrari Max Speed  (Red) ", 0, 27);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Hot Wheels", 2, "Multicolor", 832,
+ "Hot Wheels 10 cars Gift Pack  (Multicolor) ", 0, 28);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Hot Wheels", 2, "Multicolor", 569,
+ "Hot Wheels Gift Pack (Trackset + 5 car pack)  (Multicolor) ", 0, 29);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Hot Wheels ", 2, "Multicolor", 1349,
+ "Hot Wheels Power Shift Raceway Track Set  (Multicolor)", 0, 30);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Cello", 2, "black", 243,
+ "Innovador Chevrolet Camaro SS  (Yellow (Multicolor))", 0, 31);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Kinsmart", 2, "Yellow", 255,
+ "Kinsmart  1957 Chevrolet Bel Air Taxi Toy, Diecast model Car  (Yellow)", 0, 32);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Maisto", 2, "black", 1250,
+ "Maisto Black 1.24 scale  (Black)", 0, 33);
+ 
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss & Chief", 2, "Orange", 539,
+ "Miss & Chief Mini Racing 4 Channel Radio control RC Car, Orange  (Orange)", 0, 34);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss & Chief", 2, "Red", 566,
+ "Miss & Chief Mini Racing 4 Channel Radio control RC Car, Red  (Red)", 0, 35);
+ 
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss & Chief", 2, "Red", 999,
+ "Miss & Chief Venneno Style RC Car With Fully Function Doors  (Red)", 0, 36);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss and Chief ", 2, "White", 269,
+ "Miss and Chief 5 inches 1965 Shelby Cobra 427  White  (White)", 0, 37);
+ 
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss and Chief ", 2, "Green", 809,
+ "Miss and Chief Big and Mean Rock Crawling  Scale Modified Off 
+ Road Hummer RC Car , Monster Truck(Green)", 0, 38);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss and Chief ", 2, "Multicolor", 671,
+ "Miss and Chief Classic Diecast Metal Pull Back Luxury Black Car Toy 
+ with Light and Sound Effects  (Multicolor)", 0, 39);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss and Chief ", 2, "Red", 764,
+ "Miss and Chief Hummer with open door channel (Red)", 0, 40);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("Miss and Chief ", 2, "Orange", 839,
+ "Miss and Chief Open Bugatti with open door  (Orange)", 0, 41);
+ 
+ insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values ("OM  RC", 2, "Blue", 1019,
+ "OM  RC Mini Rock Crawler Car Toy  (Blue)", 0, 42);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

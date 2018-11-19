@@ -1,0 +1,39 @@
+ 
+ 
+ 
+ ..to create table:
+ -------------------
+ 
+>> create table Product_Category (category_id integer not null, category_name varchar(255) not null,
+ primary key (category_id));
+ 
+>>create table Product_Details (product_id integer not null, product_brand varchar(255) not null, 
+product_color varchar(255) not null, product_cost bigint not null, product_name varchar(255) not 
+null, product_warranty integer, category_id integer not null, primary key (product_id));
+ 
+ ..to insert data in the  table:
+ --------------------------------
+ 
+ >>insert into Product_Category (category_name, category_id) values (?, ?);
+ 
+ >>insert into Product_Details (product_brand, category_id, product_color, product_cost, product_name,
+ product_warranty, product_id) values (?, ?, ?, ?, ?, ?, ?);
+
+ 
+ ..to update data in the  table:
+ --------------------------------
+ 
+ >>update Product_Details set product_brand=?, category_id=?, product_color=?, product_cost=?, product_name=?,
+ product_warranty=? where product_id=?;
+ 
+ >>update Product_Category set category_name=? where category_id=?;
+ 
+ ..to delete data in the  table:
+ --------------------------------
+ 
+ >>delete from Product_Details where product_id=?
+ 
+ >>delete from Product_Category where category_id=?
+ 
+ 
+ 
