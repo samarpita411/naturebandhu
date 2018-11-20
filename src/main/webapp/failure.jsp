@@ -10,11 +10,14 @@
 
 <header>
 		<table border="border" width="100%" height="0" bgcolor="teal"
-			bordercolor="teal" style="font: bold;">
+			bordercolor="grey" style="font: bold;">
 			<tr>
+			    <th><h5>
+				 <font size="8" color="green" face="forte"><br>Nature Bandhu</font>
+			    </h5></th>
 				<th><h5>
 						<form action="./getproduct" method="post">
-				Nature Bandhu Online Shopping <input type="text" name="name"> <input
+				<input type="text" name="name"> <input
 					type="submit" value="Search">
 			           </form>
 					</h5></th>
